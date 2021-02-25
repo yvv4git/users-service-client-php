@@ -1,7 +1,7 @@
 {
     "name": "yvv/users-service-client-php",
     "description": "PHP client for users-service. Work by grpc.",
-    "type": "library",
+    "type": "project",
     "license": "MIT",
     "authors": [
         {
