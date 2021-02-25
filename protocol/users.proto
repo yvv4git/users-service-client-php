@@ -2,6 +2,7 @@ syntax = "proto3";
 
 option go_package = ".;rpc";
 option php_generic_services = true;
+//option php_namespace = "Yvv\\UsersServiceClient";
 
 package rpc;
 
