@@ -1,7 +1,7 @@
 {
     "name": "yvv/users-service-client-php",
     "description": "PHP client for users-service. Work by grpc.",
-    "type": "library",
+    "type": "project",
     "license": "MIT",
     "authors": [
         {
@@ -10,9 +10,24 @@
         }
     ],
     "require": {
-        "php": ">=7.3"
+        "php": ">=7.3",
+        "grpc/grpc": "^v1.3.0",
+        "google/protobuf": "^v3.3.0",
+        "vanilla/garden-cli": "@stable"
     },
     "require-dev": {
         "phpunit/phpunit": "*@stable"
+    },
+    "autoload": {
+        "psr-4": {
+            "Yvv\\UsersServiceClient\\Client\\":"src/Client",
+            "GPBMetadata\\":"src/GPBMetadata",
+            "Rpc\\":"src/Rpc"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Yvv\\UsersServiceClient\\Tests\\":"tests"
+        }
     }
 }
